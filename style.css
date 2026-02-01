@@ -1,4 +1,6 @@
-/* Base layout */
+/* =========================
+   Base layout
+========================= */
 body {
   margin: 0;
   min-height: 100vh;
@@ -8,7 +10,9 @@ body {
   background: linear-gradient(135deg, #ffdde1, #ee9ca7);
 }
 
-/* Main card */
+/* =========================
+   Main card
+========================= */
 .card {
   background: white;
   padding: 32px 26px;
@@ -18,7 +22,9 @@ body {
   box-shadow: 0 20px 55px rgba(0,0,0,0.2);
 }
 
-/* Headings & text */
+/* =========================
+   Headings & text
+========================= */
 h1 {
   margin-top: 0;
 }
@@ -29,14 +35,18 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Buttons container */
+/* =========================
+   Buttons container
+========================= */
 .buttons {
   position: relative;
   height: 130px;
   margin-top: 10px;
 }
 
-/* Shared button styling */
+/* =========================
+   Shared button styling
+========================= */
 .btn {
   padding: 14px 22px;
   border-radius: 14px;
@@ -47,18 +57,25 @@ h1 {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-/* YES button */
+/* =========================
+   YES button
+========================= */
 .yes {
   background: #ff4d6d;
   color: white;
   box-shadow: 0 8px 18px rgba(255, 77, 109, 0.4);
 }
 
-.yes:hover {
-  transform: scale(1.05);
+/* Only apply hover on devices that support hover */
+@media (hover: hover) {
+  .yes:hover {
+    transform: scale(1.05);
+  }
 }
 
-/* NO button */
+/* =========================
+   NO button
+========================= */
 .no {
   background: #f0f0f0;
   color: #333;
@@ -68,7 +85,9 @@ h1 {
   transform: translateX(-50%);
 }
 
-/* Success message */
+/* =========================
+   Success section
+========================= */
 .success {
   margin-top: 20px;
   animation: pop 0.4s ease-out;
@@ -78,19 +97,25 @@ h1 {
   line-height: 1.55;
 }
 
-/* Reset button */
+/* =========================
+   Reset button
+========================= */
 .reset {
   margin-top: 16px;
   background: #111;
   color: white;
 }
 
-/* Utility */
+/* =========================
+   Utility
+========================= */
 .hidden {
   display: none;
 }
 
-/* Pop animation for YES screen */
+/* =========================
+   Pop animation
+========================= */
 @keyframes pop {
   from {
     transform: scale(0.95);
@@ -100,4 +125,17 @@ h1 {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+/* =========================
+   ASAP Rocky image
+========================= */
+.asap {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 16px;
+  margin: 16px auto;
+  display: block;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  animation: pop 0.4s ease-out;
 }
